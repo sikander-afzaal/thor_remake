@@ -4,10 +4,6 @@ function Built() {
   return (
     <div className="built">
       <Fade cascade top>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
         <div>
           <h1>Built on the Blockchain</h1>
         </div>
