@@ -57,7 +57,7 @@
     #2e62ff 201.6%
   );
   border-radius: 60px;
-  border: 2px solid transparent;
+  border: none;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -534,6 +534,7 @@
   width: 100%;
   gap: 3rem;
   margin-top: 3rem;
+  padding-inline: 1rem;
 }
 .built-box {
   text-align: left;
@@ -607,6 +608,7 @@
   .built-box-div {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, 1fr);
+    padding-inline: 0rem;
   }
   .built-box {
     height: 230px;
@@ -648,10 +650,19 @@
   margin-top: 10rem;
   margin-bottom: 6rem;
 }
-.roadmap h1 {
+.main-head {
   font-size: 3rem;
-  color: #ffffff;
-  font-family: "Vidaloka", serif !important;
+  background: linear-gradient(
+    112.98deg,
+    #fff4d1 8.47%,
+    #f5d28f 23.3%,
+    #675537 91.31%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  font-family: "h1", serif !important;
   font-weight: bold;
   letter-spacing: 2px;
   text-align: center;
@@ -778,11 +789,13 @@
 .roadmap-box-content p {
   font-size: 1.1rem;
   color: white;
+  opacity: 60%;
 }
 .roadmap-box-content h1 {
-  color: #06fff0;
-  font-family: "Montserrat", sans-serif !important;
+  color: white !important;
+  font-family: "Kanit", sans-serif !important;
   font-weight: 700;
+  font-size: 3rem;
 }
 .margin-bot {
   margin-bottom: 1.5rem;

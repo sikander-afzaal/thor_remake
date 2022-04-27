@@ -23,7 +23,7 @@ function Roadmap() {
       <div className="container-wrapper">
         <div className="roadmap">
           <Fade top>
-            <h1>Roadmap</h1>
+            <h1 className="main-head">Roadmap</h1>
           </Fade>
           <div className="roadmap-content-wrapper">
             <div className="roadmap-content" ref={lineRef}>
