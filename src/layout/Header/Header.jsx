@@ -6,7 +6,6 @@ import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { Link as ScrollLink } from "react-scroll";
 const Header = () => {
   const [open, setOpen] = useState(false);
-  const [navbar, setNavbar] = useState(false);
   const openFunc = (e) => {
     setOpen((prev) => !prev);
     const header = document.querySelector(".header");
@@ -19,10 +18,11 @@ const Header = () => {
     }
   };
   const changeBackground = () => {
+    const header = document.querySelector(".header");
     if (window.scrollY >= 66) {
-      setNavbar(true);
+      header.classList.add("black-nav");
     } else {
-      setNavbar(false);
+      header.classList.remove("black-nav");
     }
   };
   useEffect(() => {
@@ -31,7 +31,7 @@ const Header = () => {
   });
   return (
     <>
-      <header className={`header ${navbar ? "black-nav" : ""}`}>
+      <header className={`header `}>
         <div className="h_container">
           <div className={`nav_ul ${open ? "open-nav" : ""}`}>
             <ScrollLink
