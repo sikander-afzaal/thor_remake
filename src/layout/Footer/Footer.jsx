@@ -45,13 +45,13 @@ function Footer() {
           </a>
         </div>
         <h2>
-          ©Gods of Asgard <span>Powered by Thor Financial</span>. All rights
-          served.
+          ©Gods of Asgard{" "}
+          <a target={"blank"} href="https://thor.financial/">
+            {" "}
+            Powered by Thor Financial
+          </a>
+          . All rights served.
         </h2>
-        {/* <div className="verified">
-          <FontAwesomeIcon icon={faCheck} />
-          <p>verified on etherscan</p>
-        </div> */}
       </div>
     </Fade>
   );

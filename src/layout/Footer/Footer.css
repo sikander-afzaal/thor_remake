@@ -50,20 +50,15 @@
   color: white;
   text-align: center;
 }
-.footer h2 span {
+.footer h2 a {
   background: linear-gradient(90deg, #2e62ff 26.2%, #4b24dc 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
+  text-decoration: none;
 }
-.verified {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 1rem 0rem;
-  gap: 20px;
-}
+
 .verified svg {
   font-size: 1rem;
   color: white;
