@@ -7,7 +7,7 @@ import NftCard from "../../components/NftCard/NftCard";
 import Fade from "react-reveal/Fade";
 function Character() {
   return (
-    <div className="character-cont">
+    <div className="character-cont cont">
       <div className="shadow-char"></div>
       <div className="shadow-char"></div>
       <div id="collection" className="character">
