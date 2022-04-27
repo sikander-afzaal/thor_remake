@@ -694,7 +694,7 @@
 }
 @media screen and (max-width: 522px) {
   .built-box {
-    height: 330px;
+    height: 360px;
     text-align: center;
   }
   .built-box div {
@@ -1124,7 +1124,7 @@
 }
 @media screen and (max-width: 1360px) {
   .team {
-    margin-top: 0rem;
+    margin-top: 6rem;
   }
   .team-grid {
     display: grid;
@@ -1134,6 +1134,14 @@
   }
   .team-wrapper:nth-child(5) {
     grid-column: 1/3;
+  }
+}
+@media screen and (max-width: 1076px) {
+  .team {
+    margin-top: 0rem;
+  }
+  .team h1 {
+    font-size: 2.5rem !important;
   }
 }
 @media screen and (max-width: 940px) {
