@@ -534,7 +534,7 @@
   width: 100%;
   gap: 3rem;
   margin-top: 3rem;
-  padding-inline: 1rem;
+  padding-inline: 5px;
 }
 .built-box {
   text-align: left;
