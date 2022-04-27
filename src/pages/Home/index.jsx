@@ -2,7 +2,6 @@ import React from "react";
 import "./style.css";
 import Hero from "./Hero";
 import About from "./About";
-import Collection from "./Collection";
 import Siege from "./Siege";
 import Character from "./Character";
 import Roadmap from "./Roadmap";
@@ -17,7 +16,6 @@ const Home = () => {
       <Siege />
       <Character />
       <Built />
-      {/* <Collection /> */}
       <Roadmap />
       <Team />
       <Faq />
