@@ -33,7 +33,7 @@ function Built() {
               </div>
             </div>
           </Fade>
-          <Fade right>
+          <Fade bottom>
             <div className="feat-box">
               <div>
                 <h2>Sacrifice</h2>
@@ -47,7 +47,7 @@ function Built() {
               </div>
             </div>
           </Fade>
-          <Fade bottom>
+          <Fade right>
             <div className="feat-box last-box">
               <div>
                 <h2>Rent</h2>
