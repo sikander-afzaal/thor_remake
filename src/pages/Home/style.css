@@ -648,8 +648,9 @@
   color: black;
 }
 .feat-box h3 {
-  font-size: 1rem;
+  font-size: 0.7rem;
   color: white;
+  opacity: 0.6;
   width: max-content;
   margin-top: 1rem;
   margin-left: 5px;
