@@ -46,33 +46,6 @@ function Built() {
               </div>
             </div>
           </Fade>
-          <Fade left>
-            <div className="built-box">
-              <div>
-                <h2>Summon New Gods</h2>
-                <p>
-                  Create new NFT's! With the power of the Bifrost, the gods can
-                  summon and create new playable NFT characters. By owning two
-                  of the same generation NFTs, players can spend $ASG and $THOR
-                  to create new generations of NFT's
-                </p>
-              </div>
-            </div>
-          </Fade>
-          <Fade right>
-            <div className="built-box">
-              <div>
-                <h2>Renting</h2>
-                <p>
-                  Rent out your NFT's for other players and earn while they
-                  play! Gods of Asgard is equipped with our own renting
-                  marketplace where NFT owners can rent out their NFT's for
-                  other players to play with. The tokens earned while playing is
-                  split amongst the player and the owner.
-                </p>
-              </div>
-            </div>
-          </Fade>
         </div>
       </div>
     </div>

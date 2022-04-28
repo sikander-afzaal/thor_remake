@@ -74,7 +74,7 @@ function Roadmap() {
                       <h1>Phase 3</h1>
 
                       <div className="right-box">
-                        <p>Future</p>
+                        <p>New features</p>
                         <p>VR update</p>
                         <p>and more...</p>
                       </div>

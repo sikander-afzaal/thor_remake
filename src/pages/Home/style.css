@@ -531,14 +531,23 @@
 .built-box-div {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  width: 100%;
+  gap: 3rem;
+  margin-top: 3rem;
+  padding-inline: 5px;
+}
+.feat-div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   width: 100%;
   gap: 3rem;
   margin-top: 3rem;
   padding-inline: 5px;
 }
-
-.built-box {
+.built-box,
+.feat-box {
   text-align: left;
   background: transparent;
   border-radius: 24px;
@@ -548,6 +557,7 @@
   position: relative;
   background: linear-gradient(90deg, #2e62ff 26.2%, #4b24dc 100%);
 }
+
 .built-box div {
   height: 100%;
   background-color: #11141d;
@@ -559,7 +569,19 @@
   grid-template-rows: 0.5fr 1fr;
   height: 100%;
 }
-.built-box::after {
+.feat-box div {
+  height: 100%;
+  background-color: #11141d;
+  border-radius: 24px;
+  width: 100%;
+  display: grid;
+  padding: 30px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.5fr 1fr 0.5fr;
+  height: 100%;
+}
+.built-box::after,
+.feat-box::after {
   content: "";
   position: absolute;
   top: -1px;
@@ -570,7 +592,8 @@
   z-index: -1;
   border-radius: 24px;
 }
-.built-box h2 {
+.built-box h2,
+.feat-box h2 {
   font-size: 2.3rem;
   color: white;
   grid-column: 1/2;
@@ -583,7 +606,8 @@
   font-weight: 400;
   text-transform: capitalize;
 }
-.built-box p {
+.built-box p,
+.feat-box p {
   grid-column: 1/2;
   grid-row: 2/3;
   width: 100% !important;
@@ -602,11 +626,30 @@
   justify-self: center;
   align-self: center;
 }
+.more-info {
+  padding: 10px 30px;
+  border: 2px solid white;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+  width: max-content;
+  background-color: transparent;
+  transition: all 0.3s ease-in-out;
+  font-weight: bold;
+  font-size: 1rem;
+}
+.more-info:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+}
 @media screen and (max-width: 1526px) {
-  .built-box-div {
+  .built-box-div,
+  .feat-div {
     gap: 2rem;
   }
-  .built-box {
+  .built-box,
+  .feat-box {
     justify-self: center;
     align-self: center;
     width: 95%;
@@ -618,10 +661,10 @@
 @media screen and (max-width: 1204px) {
   .built-box-div {
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     padding-inline: 0rem;
   }
-  .boxes-div {
+  .feat-div {
     grid-template-columns: 1fr;
     grid-template-rows: none;
     grid-auto-rows: auto;
@@ -639,13 +682,25 @@
     width: 95%;
     font-size: 1.2rem;
   }
+  .feat-box {
+    height: 300px;
+  }
 }
 @media screen and (max-width: 756px) {
   .built-box {
     height: 280px;
   }
+  .feat-box {
+    height: 320px;
+  }
 }
-@media screen and (max-width: 522px) {
+@media screen and (max-width: 672px) {
+  .feat-box {
+    height: 350px;
+    gap: 1rem;
+  }
+}
+@media screen and (max-width: 526px) {
   .built-box {
     height: 360px;
     text-align: center;
@@ -655,13 +710,35 @@
     grid-template-rows: auto 1fr;
   }
   .built-box h2,
-  .built-box p {
+  .built-box p,
+  .feat-box p,
+  .feat-box h2 {
     align-self: center;
     text-align: center;
     justify-self: center;
   }
+  .feat-box button {
+    height: max-content;
+    padding: 15px 30px;
+    justify-self: center;
+    align-self: center;
+  }
+  .feat-box {
+    height: 360px;
+  }
+  .feat-box div {
+    padding: 20px;
+  }
+  .feat-box div {
+    grid-template-rows: auto 1fr auto;
+  }
 }
-
+@media screen and (max-width: 420px) {
+  .feat-box {
+    height: 380px;
+    gap: 0rem;
+  }
+}
 /* roadmap---------------------------- */
 .roadmap-wrapper {
   min-height: 100vh;
