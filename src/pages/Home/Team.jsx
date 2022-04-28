@@ -46,9 +46,6 @@ function Team() {
             }}
           >
             <SplideSlide className="swiper-lazy">
-              <TeamCard img={team3} name={"David Dotan"} role={"Founder"} />
-            </SplideSlide>
-            <SplideSlide className="swiper-lazy">
               <TeamCard
                 img={team4}
                 name={"TiSci"}
@@ -71,6 +68,10 @@ function Team() {
                 name={"0xTom"}
                 role={"Solidity Developer"}
               />
+            </SplideSlide>
+
+            <SplideSlide className="swiper-lazy">
+              <TeamCard img={team3} name={"David Dotan"} role={"Founder"} />
             </SplideSlide>
           </Splide>
         </div>
