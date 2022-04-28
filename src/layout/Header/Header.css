@@ -11,11 +11,11 @@
 }
 .black-nav {
   backdrop-filter: blur(10px);
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: #2e62ff;
 }
 .black-nav .nav_ul a,
 .black-nav svg {
-  color: black;
+  color: white;
 }
 .h_container {
   width: 90%;

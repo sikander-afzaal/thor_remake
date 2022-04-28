@@ -9,15 +9,15 @@ const About = () => {
           <Fade cascade bottom>
             <div className="t_left">
               <h2>
-                Welcome <br /> Asgardians!
+                Welcome <br /> Asgardians
               </h2>
 
               <p>
-                Gods of Asgard is a P2E NFT Battle-Royale game rooted in Norse
-                myhtology and powered by the Avalanche blockchain. Mysterious
-                enemy forces are conspiring against the realms and disrupting
-                the balance created by the Gods. Ready your weapons, the epic
-                battle for the nine realms begins soon.
+                Gods of Asgard is a P2E NFT game rooted in Norse mythology and
+                powered by the Avalanche blockchain. Battle, survive, and earn
+                your way though an epic Battle-Royale while exploring the vast
+                open world of Midgard. Ready your weapons, the battle for the
+                nine realms begins now.
               </p>
               <p className="powered">Powered by Thor Financial</p>
             </div>
