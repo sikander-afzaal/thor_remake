@@ -8,6 +8,7 @@ import Roadmap from "./Roadmap";
 import Faq from "./Faq";
 import Team from "./Team";
 import Built from "./Built";
+import Boxes from "./Boxes";
 const Home = () => {
   return (
     <>
@@ -15,6 +16,7 @@ const Home = () => {
       <About />
       <Siege />
       <Character />
+      <Boxes />
       <Built />
       <Roadmap />
       <Team />
