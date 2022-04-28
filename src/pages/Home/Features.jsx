@@ -27,7 +27,9 @@ function Built() {
                   of two NFT's with the same rarity to mint a brand new NFT
                   character
                 </p>
+
                 <button className="more-info">More Info</button>
+                <h3>Coming Soon</h3>
               </div>
             </div>
           </Fade>
@@ -40,7 +42,8 @@ function Built() {
                   blessing. Sacrificing allows players to burn their characters
                   to mint a brand new NFT character of a higher tier.
                 </p>
-                <button className="more-info">More Info</button>
+                <button className="more-info">More Info</button>{" "}
+                <h3>Coming Soon</h3>
               </div>
             </div>
           </Fade>
@@ -54,7 +57,8 @@ function Built() {
                   marketplace, NFT owners can rent out their characters for
                   others to play and earn a share of rewards.
                 </p>
-                <button className="more-info">More Info</button>
+                <button className="more-info">More Info</button>{" "}
+                <h3>Coming Soon</h3>
               </div>
             </div>
           </Fade>

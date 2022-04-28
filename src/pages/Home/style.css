@@ -557,7 +557,9 @@
   position: relative;
   background: linear-gradient(90deg, #2e62ff 26.2%, #4b24dc 100%);
 }
-
+.feat-box {
+  height: 300px;
+}
 .built-box div {
   height: 100%;
   background-color: #11141d;
@@ -577,7 +579,7 @@
   display: grid;
   padding: 30px;
   grid-template-columns: 1fr;
-  grid-template-rows: 0.5fr 1fr 0.5fr;
+  grid-template-rows: 0.5fr 1fr 0.5fr auto;
   height: 100%;
 }
 .built-box::after,
@@ -626,6 +628,7 @@
   justify-self: center;
   align-self: center;
 }
+
 .more-info {
   padding: 10px 30px;
   border: 2px solid white;
@@ -637,11 +640,19 @@
   transition: all 0.3s ease-in-out;
   font-weight: bold;
   font-size: 1rem;
+  opacity: 0.6;
 }
 .more-info:hover {
-  cursor: pointer;
+  cursor: not-allowed;
   background-color: white;
   color: black;
+}
+.feat-box h3 {
+  font-size: 1rem;
+  color: white;
+  width: max-content;
+  margin-top: 1rem;
+  margin-left: 5px;
 }
 @media screen and (max-width: 1526px) {
   .built-box-div,
@@ -693,6 +704,10 @@
   .feat-box {
     height: 320px;
   }
+  .feat-box button {
+    height: max-content;
+    padding: 15px 30px;
+  }
 }
 @media screen and (max-width: 672px) {
   .feat-box {
@@ -730,12 +745,17 @@
     padding: 20px;
   }
   .feat-box div {
-    grid-template-rows: auto 1fr auto;
+    grid-template-rows: auto 1fr auto auto;
+  }
+  .feat-box h3 {
+    justify-self: center;
+    align-self: center;
+    margin-left: 0px;
   }
 }
 @media screen and (max-width: 420px) {
   .feat-box {
-    height: 380px;
+    height: 400px;
     gap: 0rem;
   }
 }
