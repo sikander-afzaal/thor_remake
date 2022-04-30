@@ -404,7 +404,8 @@
   filter: blur(200px);
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate3d(0, 0, 0) translate(-50%, -50%);
+  transform: translate3d(0, 0, 0) translate(-50%, -50%);
 }
 .character {
   display: flex;
