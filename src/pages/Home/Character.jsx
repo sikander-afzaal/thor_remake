@@ -1,8 +1,12 @@
 import React from "react";
-import thor from "../../assets/characters/thor.png";
-import heimdall from "../../assets/characters/heimdall.png";
-import odin from "../../assets/characters/odin.png";
-import freya from "../../assets/characters/freya.png";
+import thor from "../../assets/characters/thor.webm";
+import thorPoster from "../../assets/characters/thor.png";
+import heimdall from "../../assets/characters/heimdall.webm";
+import heimdallPoster from "../../assets/characters/heimdall.png";
+import odin from "../../assets/characters/odin.webm";
+import odinPoster from "../../assets/characters/odin.png";
+import freya from "../../assets/characters/freya.webm";
+import freyaPoster from "../../assets/characters/freya.png";
 import NftCard from "../../components/NftCard/NftCard";
 import Fade from "react-reveal/Fade";
 function Character() {
@@ -28,6 +32,7 @@ function Character() {
               img={heimdall}
               desc={`The watchman of the gods and guardian of the Bifrost; Heimdall, defends the rainbow bridge that connects all nine realms together. He is gifted with the power of prescience; a divine capacity of foresight, allowing him to see and hear across all realms, both mortal and god alike. He wields, Hofund, a sword with the ability to draw energy from other magical entities that exist within the universe.`}
               name={"heimdall"}
+              poster={heimdallPoster}
             />
           </Fade>
           <Fade delay={400} bottom>
@@ -38,6 +43,7 @@ function Character() {
             forces, she leads her fearless Valkyries into battle; the entheat &
             powerful league of goddesses, who form her royal guard`}
               name={"freya"}
+              poster={freyaPoster}
             />
           </Fade>
           <Fade delay={600} bottom>
@@ -48,6 +54,7 @@ function Character() {
             him with increased strength and governance over the powerful element
             of lightning.`}
               name={"thor"}
+              poster={thorPoster}
             />
           </Fade>
           <Fade delay={800} bottom>
@@ -59,6 +66,7 @@ function Character() {
             to bring order to the universe; fighting side by side with his
             comrades to restore peace and prosperity to its lands.`}
               name={"odin"}
+              poster={odinPoster}
             />
           </Fade>
         </div>
