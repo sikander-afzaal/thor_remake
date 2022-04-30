@@ -413,6 +413,7 @@
   overflow-y: hidden;
   gap: 1rem;
   max-width: 1700px;
+  margin-inline: auto;
   flex-direction: column;
 }
 .character h1 {
