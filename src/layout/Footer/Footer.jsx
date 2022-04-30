@@ -34,7 +34,7 @@ function Footer() {
           </a>
         </div> */}
         <div className="social-div">
-          <a target={"blank"} href="https://discord.gg/thornodes">
+          <a target={"blank"} href="https://discord.gg/thorfinancial">
             <img src={discord} alt="..." />
           </a>
           <a target={"blank"} href="https://twitter.com/_ThorFinancial">
