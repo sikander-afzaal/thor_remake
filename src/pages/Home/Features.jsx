@@ -28,7 +28,13 @@ function Built() {
                   character
                 </p>
 
-                <button className="more-info">More Info</button>
+                <a
+                  href="https://gods-of-asgard.gitbook.io/gods-of-asgard-whitepaper-v1.0/game-economy/summoning"
+                  target={"blank"}
+                  className="more-info"
+                >
+                  More Info
+                </a>
                 <h3>Coming Soon</h3>
               </div>
             </div>
@@ -42,7 +48,13 @@ function Built() {
                   blessing. Sacrificing allows players to burn their characters
                   to mint a brand new NFT character of a higher tier.
                 </p>
-                <button className="more-info">More Info</button>{" "}
+                <a
+                  href="https://gods-of-asgard.gitbook.io/gods-of-asgard-whitepaper-v1.0/game-economy/sacrifice"
+                  target={"blank"}
+                  className="more-info"
+                >
+                  More Info
+                </a>{" "}
                 <h3>Coming Soon</h3>
               </div>
             </div>
@@ -57,7 +69,13 @@ function Built() {
                   marketplace, NFT owners can rent out their characters for
                   others to play and earn a share of rewards.
                 </p>
-                <button className="more-info">More Info</button>{" "}
+                <a
+                  href="https://gods-of-asgard.gitbook.io/gods-of-asgard-whitepaper-v1.0/game-economy/renting"
+                  target={"blank"}
+                  className="more-info"
+                >
+                  More Info
+                </a>{" "}
                 <h3>Coming Soon</h3>
               </div>
             </div>

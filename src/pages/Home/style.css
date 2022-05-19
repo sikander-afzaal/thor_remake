@@ -15,6 +15,7 @@
   align-items: center;
   flex-direction: column;
   padding-top: 5rem;
+  gap: 4rem;
   mix-blend-mode: normal;
 }
 .bg {
@@ -27,7 +28,7 @@
   object-fit: contain;
 }
 .logo-hero {
-  max-width: 300px;
+  max-width: 500px;
   position: relative;
   z-index: 3;
   object-fit: contain;
@@ -89,6 +90,7 @@
   justify-content: center;
   align-items: center;
   gap: 40px;
+  margin-top: 2rem;
 }
 
 .social-div-hero img {
@@ -98,9 +100,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #1d2331;
+  background: linear-gradient(
+    90deg,
+    #2e62ff 2.66%,
+    #4b24dc 103.16%,
+    #2e62ff 201.6%
+  );
   border-radius: 50%;
-  border: 1.5px solid #06fff0;
+  border: 2px solid white;
 }
 
 .hero_container {
@@ -120,8 +127,19 @@
 }
 @media screen and (max-width: 1080px) {
   .hero {
-    min-height: 0px;
-    height: auto;
+    min-height: 700px;
+  }
+}
+@media screen and (max-width: 982px) {
+  .hero {
+    justify-content: center;
+    min-height: 700px;
+  }
+  .hero_container {
+    margin-top: 200px;
+  }
+  .logo-hero {
+    display: none;
   }
 }
 @media screen and (max-width: 576px) {
@@ -429,7 +447,7 @@
   color: white;
   width: 1183px;
   line-height: 1.6;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   text-align: center;
   font-family: "Noto Sans", sans-serif;
   font-weight: 300;
@@ -920,6 +938,7 @@
   font-size: 1.1rem;
   color: white;
   opacity: 60%;
+  font-family: "Kanit", serif !important;
 }
 .roadmap-box-content h1 {
   color: white !important;

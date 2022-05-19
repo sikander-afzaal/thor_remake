@@ -22,8 +22,8 @@ function Character() {
           <p>
             The God of Asgard are NFTs from our upcoming collection minting May
             1st. Each God is equipped with their own unique skills and story.
-            The NFTs act as your playable character and key to entering in this
-            universe
+            The NFT's act as your playable character and are your key to
+            entering the GoA universe
           </p>
         </Fade>
         <div className="wrapper-grid">

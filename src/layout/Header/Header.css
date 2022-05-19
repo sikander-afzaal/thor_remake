@@ -47,10 +47,12 @@
   position: relative;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
-  font-family: "Vidaloka", serif !important;
+  font-family: "Kanit", serif !important;
   font-weight: 400;
 }
-
+.head-logo {
+  display: none;
+}
 .nav_ul a::before {
   position: absolute;
   left: 0;
@@ -98,7 +100,17 @@
   .header {
     overflow: hidden;
   }
+  .head-logo {
+    position: absolute;
+    left: 50%;
+    top: 64%;
+    transform: translate(-50%, -50%);
+    display: block;
+    max-width: 150px;
+    object-fit: contain;
+  }
   .h_container {
+    position: relative;
     justify-content: flex-end;
     align-items: center;
   }

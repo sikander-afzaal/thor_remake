@@ -4,6 +4,7 @@ import "./Header.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { Link as ScrollLink } from "react-scroll";
+import logo from "../../assets/images/logo.png";
 const Header = () => {
   const [open, setOpen] = useState(false);
   const openFunc = (e) => {
@@ -33,6 +34,7 @@ const Header = () => {
     <>
       <header className={`header `}>
         <div className="h_container">
+          <img src={logo} alt="" className="head-logo" />
           <div className={`nav_ul ${open ? "open-nav" : ""}`}>
             <ScrollLink
               spy={true}

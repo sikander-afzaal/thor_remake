@@ -37,7 +37,7 @@ function Footer() {
           <a target={"blank"} href="https://discord.gg/thorfinancial">
             <img src={discord} alt="..." />
           </a>
-          <a target={"blank"} href="https://twitter.com/_ThorFinancial">
+          <a target={"blank"} href="https://twitter.com/GodsofAsgardP2E">
             <img src={twitter} alt="..." />
           </a>
           <a target={"blank"} href="https://thornodes.medium.com/">

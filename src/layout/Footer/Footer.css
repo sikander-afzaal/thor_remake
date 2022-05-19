@@ -49,6 +49,7 @@
   font-size: 1rem;
   color: white;
   text-align: center;
+  font-family: "Kanit", serif;
 }
 .footer h2 a {
   background: linear-gradient(90deg, #2e62ff 26.2%, #4b24dc 100%);
