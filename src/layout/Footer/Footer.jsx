@@ -1,8 +1,6 @@
 import React from "react";
 import "./Footer.css";
 import logo from "../../assets/images/foot-logo.png";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCheck } from "@fortawesome/free-solid-svg-icons";
 import discord from "../../assets/icons/discord-grey.svg";
 import twitter from "../../assets/icons/twitter-grey.svg";
 import circles from "../../assets/icons/circles-grey.svg";
@@ -15,24 +13,6 @@ function Footer() {
           <img src={logo} alt="" />
         </div>
         <h1>Join The Community</h1>
-
-        {/* <div className="foot-nav">
-          <a href="#home" className="foot-links">
-            Home
-          </a>
-          <a href="#about" className="foot-links">
-            About
-          </a>
-          <a href="#road" className="foot-links">
-            Roadmap
-          </a>
-          <a href="#team" className="foot-links">
-            Team
-          </a>
-          <a href="#faq" className="foot-links">
-            Faq
-          </a>
-        </div> */}
         <div className="social-div">
           <a target={"blank"} href="https://discord.gg/thorfinancial">
             <img src={discord} alt="..." />

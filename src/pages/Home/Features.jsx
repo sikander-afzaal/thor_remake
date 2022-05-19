@@ -35,7 +35,6 @@ function Built() {
                 >
                   More Info
                 </a>
-                <h3>Coming Soon</h3>
               </div>
             </div>
           </Fade>
@@ -55,7 +54,6 @@ function Built() {
                 >
                   More Info
                 </a>{" "}
-                <h3>Coming Soon</h3>
               </div>
             </div>
           </Fade>
@@ -76,7 +74,6 @@ function Built() {
                 >
                   More Info
                 </a>{" "}
-                <h3>Coming Soon</h3>
               </div>
             </div>
           </Fade>

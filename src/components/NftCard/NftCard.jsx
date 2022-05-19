@@ -4,7 +4,7 @@ function NftCard({ img, desc, name, poster }) {
   return (
     <div className="wrapper-character">
       <video
-        playsinline="playsinline"
+        playsInline="playsinline"
         autoPlay
         muted
         loop

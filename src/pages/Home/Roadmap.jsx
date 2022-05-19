@@ -36,7 +36,7 @@ function Roadmap() {
                 <div className="roadmap-box" ref={box}>
                   <div className="roadmap-box-content left">
                     <div className="inner-road">
-                      <h1 className="margin-bot">Phase 1</h1>
+                      <h1 className="">Phase 1</h1>
 
                       <div className="right-box">
                         <p>Development and Launch</p>

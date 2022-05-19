@@ -94,20 +94,10 @@
 }
 
 .social-div-hero img {
-  width: 50px;
-  height: 50px;
-  padding: 10px;
+  width: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(
-    90deg,
-    #2e62ff 2.66%,
-    #4b24dc 103.16%,
-    #2e62ff 201.6%
-  );
-  border-radius: 50%;
-  border: 2px solid white;
 }
 
 .hero_container {
@@ -130,14 +120,12 @@
     min-height: 700px;
   }
 }
-@media screen and (max-width: 982px) {
+@media screen and (max-width: 989px) {
   .hero {
     justify-content: center;
     min-height: 700px;
   }
-  .hero_container {
-    margin-top: 200px;
-  }
+
   .logo-hero {
     display: none;
   }
@@ -666,7 +654,7 @@
   padding: 15px 30px;
 }
 .more-info:hover {
-  cursor: not-allowed;
+  cursor: pointer;
   background-color: white;
   color: black;
 }
@@ -880,13 +868,7 @@
   border-radius: 50%;
   position: relative;
 }
-.right-box {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-direction: column;
-  gap: 20px;
-}
+
 .roadmap-box-content {
   position: absolute;
   top: 50%;
@@ -904,12 +886,13 @@
   height: 100%;
   width: 100%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
   background-color: #11141d;
   padding: 35px;
   border-radius: 10px;
+  gap: 15px;
 }
 .roadmap-box-content::after {
   position: absolute;
@@ -930,9 +913,10 @@
 
 .right-box {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: column;
+  gap: 15px;
 }
 .roadmap-box-content p {
   font-size: 1.1rem;
