@@ -81,6 +81,10 @@
 }
 .social-div img {
   max-width: 40px;
+  transition: all 0.3s ease-in-out;
+}
+.social-div img:hover {
+  filter: contrast(8);
 }
 @media screen and (max-width: 640px) {
   .footer h1 {
