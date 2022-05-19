@@ -20,7 +20,13 @@ const Hero = () => {
             {/* <CountDown /> */}
             <div className="btn-div">
               <button className="mint">MINT NFT</button>
-              <button className="rent">RENTING</button>
+              <a
+                href="https://gods-of-asgard.gitbook.io/gods-of-asgard-whitepaper-v1.0/"
+                target={"blank"}
+                className="rent"
+              >
+                WHITEPAPER
+              </a>
             </div>
             <div className="social-div-hero">
               <a target={"blank"} href="https://discord.gg/thorfinancial">

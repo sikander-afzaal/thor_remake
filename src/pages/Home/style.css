@@ -81,6 +81,7 @@
   padding: 15px;
   background-color: transparent;
   color: white;
+  text-decoration: none;
   letter-spacing: 3px;
   transition: all 0.4s ease-in-out;
   font-family: "Kanit", sans-serif;
@@ -98,8 +99,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.3s ease-in-out;
 }
-
+.social-div-hero img:hover {
+  filter: contrast(8);
+}
 .hero_container {
   width: 500px;
   display: flex;
