@@ -20,10 +20,13 @@ const Header = () => {
   };
   const changeBackground = () => {
     const header = document.querySelector(".header");
-    if (window.scrollY >= 66) {
+    const logo = document.querySelector(".head-logo");
+    if (window.scrollY >= 200) {
       header.classList.add("black-nav");
+      logo.classList.add("show-logo");
     } else {
       header.classList.remove("black-nav");
+      logo.classList.remove("show-logo");
     }
   };
   useEffect(() => {
