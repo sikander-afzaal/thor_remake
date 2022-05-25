@@ -1342,11 +1342,17 @@
   align-items: center;
   width: 100%;
   padding: 2rem 2rem;
-  background: #0a1f3a78;
+
+  background: linear-gradient(
+    92.91deg,
+    rgba(19, 22, 30, 0.76) 1.78%,
+    rgba(19, 22, 30, 0.62) 99.64%
+  );
   border-top: 15px;
   cursor: pointer;
   color: white;
   border-radius: 7px;
+  box-shadow: 0 2px 2px rgb(0 0 0 / 72%);
   transition: all 0.3s ease-in-out;
 }
 .faq-btn p {
@@ -1359,7 +1365,7 @@
 .faq-btn svg {
   font-size: 1.5rem;
   pointer-events: none;
-  color: #f5d28f;
+  color: #e9af4b;
 }
 .faq-answer {
   transition: all 0.3s ease-in-out;
