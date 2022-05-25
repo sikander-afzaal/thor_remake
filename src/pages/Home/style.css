@@ -52,41 +52,143 @@
   transition: all 0.4s ease-in-out;
   font-family: "Kanit", sans-serif;
   font-weight: bold;
-  background: linear-gradient(
+  background-image: linear-gradient(
     90deg,
-    #2e62ff 2.66%,
-    #4b24dc 103.16%,
-    #2e62ff 201.6%
+    #0065ff,
+    #6942ef,
+    #6554c0,
+    #008cff,
+    #0065ff,
+    #6942ef
   );
+  background-size: 400%;
+  background-position: 0% 0%;
   border-radius: 60px;
   border: none;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
-.mint:hover,
-.rent:hover {
-  opacity: 0.5;
+@keyframes gradientRotate {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
 }
+.mint::before {
+  content: "";
+  position: absolute;
+  left: -2px;
+  top: -2px;
+  right: -2px;
+  bottom: -2px;
+  border-radius: 26px;
+  background-image: linear-gradient(
+    90deg,
+    #0065ff,
+    #6942ef,
+    #6554c0,
+    #008cff,
+    #0065ff,
+    #6942ef
+  );
+  background-size: 500%;
+  background-position: 0% 0%;
+  filter: blur(10px);
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 0.2s;
+}
+.mint:hover {
+  animation: gradientRotate 2s infinite;
+}
+.mint:hover::before {
+  opacity: 1;
+  animation: gradientRotate 2s infinite;
+}
+.mint:active {
+  color: #c3c4d5;
+}
+.mint:focus::before {
+  opacity: 1;
+}
+
 .rent {
   background: transparent;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 60px;
-  border: 2px solid white;
-  width: 152px;
+  border: 2px solid transparent;
+  width: 172px;
+  font-weight: 600;
   height: 54px;
   cursor: pointer;
   font-size: 1rem;
   padding: 15px;
-  background-color: transparent;
-  color: white;
+  color: #008cff;
   text-decoration: none;
   letter-spacing: 3px;
   transition: all 0.4s ease-in-out;
   font-family: "Kanit", sans-serif;
+  background-color: #0e0e30;
+  background-clip: padding-box;
+  overflow: hidden;
+  z-index: 1;
+  position: relative;
 }
+
+.rent::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  border: 2px solid transparent;
+  background-image: linear-gradient(#0e0e30, #0e0e30),
+    linear-gradient(90deg, #008cff, #6942ef);
+  background-clip: padding-box, border-box;
+  background-repeat: repeat-x;
+  background-size: calc(100% + 2px * 2) calc(100% + 2px * 2);
+  background-position: center;
+  border-radius: 26px;
+  z-index: -1;
+  transition: border-color 0.2s;
+}
+.rent::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 70vmax;
+  height: 70vmax;
+  border-radius: 50%;
+  background-image: linear-gradient(90deg, #008cff, #6942ef);
+  transform-origin: center;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.4s ease-in-out;
+  z-index: -1;
+}
+.rent:hover {
+  color: white;
+}
+.rent:hover::after {
+  transform: translate(-50%, -50%) scale(1);
+}
+.rent:active {
+  color: #c3c4d5;
+}
+.rent:focus {
+  color: white;
+}
+.rent:focus::before {
+  border-color: #00b8d9;
+}
+
 .social-div-hero {
   display: flex;
   justify-content: center;
@@ -656,7 +758,7 @@
 
 .more-info {
   border: 2px solid white;
-  color: white;
+  color: #737594;
   text-align: center;
   border-radius: 10px;
   width: max-content;
@@ -667,12 +769,63 @@
   opacity: 0.6;
   height: max-content;
   padding: 15px 30px;
+  position: relative;
+  background-color: transparent;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+  overflow: hidden;
+  z-index: 1;
 }
-.more-info:hover {
-  cursor: pointer;
-  background-color: white;
-  color: black;
+.more-info::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  border: 2px solid #313152;
+  background-position: center;
+  border-radius: 10px;
+  z-index: -1;
+  transition: border-color 0.2s;
 }
+.more-info::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 70vmax;
+  height: 70vmax;
+  border-radius: 50%;
+  background-color: #737594;
+  opacity: 0.3;
+  transform-origin: center;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.4s ease-in-out;
+  z-index: -1;
+}
+.more-info--active::after {
+  background-color: #f7841d;
+  opacity: 1;
+}
+.more-info:focus {
+  color: #fff;
+}
+.more-info:focus::before {
+  border-color: #737594;
+}
+.more-info:hover,
+.more-info:hover:focus {
+  color: #fff;
+}
+.more-info:hover::after,
+.more-info:hover:focus::after {
+  transform: translate(-50%, -50%) scale(1);
+}
+.more-info:active {
+  color: #c3c4d5;
+}
+
 .feat-box h3 {
   font-size: 0.7rem;
   color: white;
@@ -1365,7 +1518,25 @@
 .faq-btn svg {
   font-size: 1.5rem;
   pointer-events: none;
-  color: #e9af4b;
+  background: pink;
+  background: -webkit-radial-gradient(
+    33% 100% circle,
+    #515ecf 4%,
+    #9b36b7 30%,
+    #d92e7f 62%,
+    #f15245 85%,
+    #fed373
+  );
+  background: radial-gradient(
+    circle at 33% 100%,
+    #ff3be7 4%,
+    #ff3be7 28%,
+    #03ffe8 62%,
+    #f15245 85%,
+    #fed373
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .faq-answer {
   transition: all 0.3s ease-in-out;
