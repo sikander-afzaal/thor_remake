@@ -1377,6 +1377,12 @@
   border-radius: 7px;
   width: 100%;
   font-family: "Noto Sans", sans-serif;
+  background: linear-gradient(
+    92.91deg,
+    rgba(19, 22, 30, 0.76) 1.78%,
+    rgba(19, 22, 30, 0.62) 99.64%
+  );
+  box-shadow: 0 2px 2px rgb(0 0 0 / 72%);
 }
 .answer {
   font-size: 1.2rem;
@@ -1399,6 +1405,7 @@
   border-top-right-radius: 7px;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
+  box-shadow: none;
 }
 @media screen and (max-width: 1390px) {
   .faq {
