@@ -901,6 +901,9 @@
     height: 350px;
     gap: 1rem;
   }
+  .more-info {
+    justify-self: center;
+  }
 }
 @media screen and (max-width: 526px) {
   .built-box {
