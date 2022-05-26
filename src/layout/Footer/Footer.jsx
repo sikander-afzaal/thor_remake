@@ -30,7 +30,7 @@ function Footer() {
             {" "}
             Powered by Thor Financial
           </a>
-          . All rights served.
+          . All rights reserved.
         </h2>
       </div>
     </Fade>

@@ -1,11 +1,8 @@
 import React, { useState } from "react";
 import Fade from "react-reveal/Fade";
 import Rotate from "react-reveal/Rotate";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faPlusSquare,
-  faMinusSquare,
-} from "@fortawesome/free-regular-svg-icons";
+import plus from "../../assets/icons/+.svg";
+import minus from "../../assets/icons/minus.svg";
 function Faq() {
   // if you want to add more questions just add another false here or vice versa
   const [open, setOpen] = useState([false, false, false]);
@@ -45,12 +42,13 @@ function Faq() {
                 When does Gods of Asgard launch?
               </p>
               {open[0] ? (
-                <FontAwesomeIcon
+                <img
+                  alt="..."
                   className={`${open[0] ? "active-btn" : ""}`}
-                  icon={faMinusSquare}
+                  src={minus}
                 />
               ) : (
-                <FontAwesomeIcon icon={faPlusSquare} />
+                <img alt="..." src={plus} />
               )}
             </div>
             <div className={`faq-answer ${open[0] ? "active" : ""}`}>
@@ -70,12 +68,13 @@ function Faq() {
                 What blockchain will Gods of Asgard be launched on?
               </p>
               {open[1] ? (
-                <FontAwesomeIcon
+                <img
+                  alt="..."
                   className={`${open[1] ? "active-btn" : ""}`}
-                  icon={faMinusSquare}
+                  src={minus}
                 />
               ) : (
-                <FontAwesomeIcon icon={faPlusSquare} />
+                <img alt="..." src={plus} />
               )}
             </div>
             <div className={`faq-answer ${open[1] ? "active" : ""}`}>
@@ -98,12 +97,13 @@ function Faq() {
                 How can i play?
               </p>
               {open[2] ? (
-                <FontAwesomeIcon
+                <img
+                  alt="..."
                   className={`${open[2] ? "active-btn" : ""}`}
-                  icon={faMinusSquare}
+                  src={minus}
                 />
               ) : (
-                <FontAwesomeIcon icon={faPlusSquare} />
+                <img alt="..." src={plus} />
               )}
             </div>
             <div className={`faq-answer ${open[2] ? "active" : ""}`}>
