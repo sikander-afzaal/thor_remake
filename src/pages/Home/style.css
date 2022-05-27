@@ -127,6 +127,7 @@
   color: white !important;
   border-radius: 60px !important;
   border: 2px solid white !important;
+  text-decoration: none;
 }
 .rent {
   background: transparent;
