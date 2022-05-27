@@ -19,18 +19,13 @@ const Hero = () => {
           <div className="hero_container">
             {/* <CountDown /> */}
             <div className="btn-div">
-              <div className="sub-btn">
-                <button className="mint">MINT NFT</button>
-                <a
-                  href="https://gods-of-asgard.gitbook.io/gods-of-asgard-whitepaper-v1.0/"
-                  target={"blank"}
-                  className="rent"
-                >
-                  WHITEPAPER
-                </a>
-              </div>
-              <a href="#" className="more-info play-demo">
-                Play Demo
+              <button className="mint">MINT NFT</button>
+              <a
+                href="https://gods-of-asgard.gitbook.io/gods-of-asgard-whitepaper-v1.0/"
+                target={"blank"}
+                className="rent"
+              >
+                WHITEPAPER
               </a>
             </div>
             <div className="social-div-hero">

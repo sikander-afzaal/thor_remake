@@ -20,6 +20,9 @@ const About = () => {
                 nine realms begins now.
               </p>
               <p className="powered">Powered by Thor Financial</p>
+              <a href="#" className="more-info">
+                Play Demo
+              </a>
             </div>
           </Fade>
           <Fade right>
