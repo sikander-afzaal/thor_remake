@@ -160,7 +160,9 @@
 }
 .more-info::before {
   border-radius: 10px;
-  border: 1px solid transparent;
+  background-image: linear-gradient(#11141d, #11141d),
+    linear-gradient(90deg, #008cff, #6942ef);
+  border: 1px solid transparent !important;
 }
 .rent::after,
 .more-info::after {
@@ -775,7 +777,7 @@
 }
 
 .more-info {
-  border: 1px solid white;
+  border: 1px solid transparent;
   color: #008cff;
   text-align: center;
   border-radius: 10px;
