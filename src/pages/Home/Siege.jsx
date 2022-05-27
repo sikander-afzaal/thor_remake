@@ -9,7 +9,7 @@ function Siege() {
         <p>
           Mysterious forces have begun laying siege upon the realms of
           yggdrasil, the tree of worlds. Odin has called upon the Gods of Asgard
-          to take the bifrost and maintain order in the nine realms
+          to take the bifrost and maintain order in the nine realms.
         </p>
         <img src={sign} alt="" className="sign" />
       </div>

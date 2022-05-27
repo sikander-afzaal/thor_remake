@@ -23,7 +23,7 @@ function Character() {
             The God of Asgard are NFTs from our upcoming collection minting May
             1st. Each God is equipped with their own unique skills and story.
             The NFT's act as your playable character and are your key to
-            entering the GoA universe
+            entering the GoA universe.
           </p>
         </Fade>
         <div className="wrapper-grid">
@@ -41,7 +41,7 @@ function Character() {
               desc={`Queen of the Valkyries and goddess of love and war, Freya, is
             equipped with her sword, shield, and magical bow. Blessed by magical
             forces, she leads her fearless Valkyries into battle; the entheat &
-            powerful league of goddesses, who form her royal guard`}
+            powerful league of goddesses, who form her royal guard.`}
               name={"freya"}
               poster={freyaPoster}
             />

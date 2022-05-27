@@ -25,7 +25,7 @@ function Built() {
                   Call upon the Bifrost to summon additional support on the
                   battlefield! This feature allows players to combine the power
                   of two NFT's with the same rarity to mint a brand new NFT
-                  character
+                  character.
                 </p>
 
                 <a
