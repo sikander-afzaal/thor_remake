@@ -37,6 +37,9 @@ const Header = () => {
     <>
       <header className={`header `}>
         <div className="h_container">
+          <a href="#" className="more-info play-demo">
+            Play Demo
+          </a>
           <img src={logo} alt="" className="head-logo" />
           <div className={`nav_ul ${open ? "open-nav" : ""}`}>
             <ScrollLink
