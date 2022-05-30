@@ -1,5 +1,4 @@
 import React from "react";
-import CountDown from "../../components/CountDown/CountDown";
 // assets
 import discord from "../../assets/icons/discord-grey.svg";
 import twitter from "../../assets/icons/twitter-grey.svg";
@@ -17,15 +16,10 @@ const Hero = () => {
         </Fade>
         <Fade bottom big cascade>
           <div className="hero_container">
-            {/* <CountDown /> */}
             <div className="btn-div">
               <button className="mint">MINT NFT</button>
-              <a
-                href="https://gods-of-asgard.gitbook.io/gods-of-asgard-whitepaper-v1.0/"
-                target={"blank"}
-                className="rent"
-              >
-                WHITEPAPER
+              <a href="#" className="rent">
+                Play Demo
               </a>
             </div>
             <div className="social-div-hero">

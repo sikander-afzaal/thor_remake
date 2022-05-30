@@ -20,6 +20,13 @@ const About = () => {
                 nine realms begins now.
               </p>
               <p className="powered">Powered by Thor Financial</p>
+              <a
+                href="https://gods-of-asgard.gitbook.io/gods-of-asgard-whitepaper-v1.0/"
+                className="more-info play-demo"
+                target={"blank"}
+              >
+                WHITEPAPER
+              </a>
             </div>
           </Fade>
           <Fade right>
