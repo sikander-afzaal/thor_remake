@@ -17,7 +17,13 @@ const Hero = () => {
         <Fade bottom big cascade>
           <div className="hero_container">
             <div className="btn-div">
-              <button className="mint">MINT NFT</button>
+              <a
+                href="https://mint.godsofasgardp2e.com/"
+                target={"blank"}
+                className="mint"
+              >
+                MINT NFT
+              </a>
               <a href="#" className="rent">
                 Renting
               </a>
