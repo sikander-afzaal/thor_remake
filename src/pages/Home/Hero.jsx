@@ -22,7 +22,7 @@ const Hero = () => {
                 Renting
               </a>
               <a
-                href="https://drive.google.com/file/d/1XbOKF5lAy536VmO6nG_xEzEZgA5GNV7M/view"
+                href="https://godsofasgardp2e.com/downloads/goa_demo.exe"
                 target={"blank"}
                 className="mint"
               >
