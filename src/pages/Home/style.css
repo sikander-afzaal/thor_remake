@@ -1604,6 +1604,14 @@
   .faq-btn svg {
     font-size: 1.3rem;
   }
+  .btn-div {
+    flex-direction: column;
+    width: 100%;
+  }
+  .btn-div a,
+  .btn-div button {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 450px) {
   .faq {

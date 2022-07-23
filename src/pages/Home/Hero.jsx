@@ -19,14 +19,24 @@ const Hero = () => {
             <div className="btn-div">
               <button className="mint">MINT NFT</button>
               <a href="#" className="rent">
+                Renting
+              </a>
+              <a
+                href="https://drive.google.com/file/d/1XbOKF5lAy536VmO6nG_xEzEZgA5GNV7M/view"
+                target={"blank"}
+                className="mint"
+              >
                 Play Demo
               </a>
             </div>
             <div className="social-div-hero">
-              <a target={"blank"} href="https://discord.gg/thorfinancial">
+              <a target={"blank"} href="https://discord.gg/F3B4sY5RtN">
                 <img src={discord} alt="..." />
               </a>
-              <a target={"blank"} href="https://twitter.com/GodsofAsgardP2E">
+              <a
+                target={"blank"}
+                href="https://twitter.com/godsofasgardp2e?s=21&t=D4tQYm0V4VeQtorulTCF9g"
+              >
                 <img src={twitter} alt="..." />
               </a>
               <a target={"blank"} href="https://thornodes.medium.com/">

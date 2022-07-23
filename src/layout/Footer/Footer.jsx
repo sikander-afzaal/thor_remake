@@ -14,24 +14,20 @@ function Footer() {
         </div>
         <h1>Join The Community</h1>
         <div className="social-div">
-          <a target={"blank"} href="https://discord.gg/thorfinancial">
+          <a target={"blank"} href="https://discord.gg/F3B4sY5RtN">
             <img src={discord} alt="..." />
           </a>
-          <a target={"blank"} href="https://twitter.com/GodsofAsgardP2E">
+          <a
+            target={"blank"}
+            href="https://twitter.com/godsofasgardp2e?s=21&t=D4tQYm0V4VeQtorulTCF9g"
+          >
             <img src={twitter} alt="..." />
           </a>
           <a target={"blank"} href="https://thornodes.medium.com/">
             <img src={circles} alt="..." />
           </a>
         </div>
-        <h2>
-          ©Gods of Asgard{" "}
-          <a target={"blank"} href="https://thor.financial/">
-            {" "}
-            Powered by Thor Financial
-          </a>
-          . All rights reserved.
-        </h2>
+        <h2>©Gods of Asgard. All rights reserved.</h2>
       </div>
     </Fade>
   );
