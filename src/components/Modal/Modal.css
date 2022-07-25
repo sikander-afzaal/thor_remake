@@ -1,0 +1,171 @@
+.modal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  width: 96%;
+  height: 570px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #1f0e5e;
+  z-index: 12;
+  padding: 20px 30px;
+  border-radius: 10px;
+}
+.overlay-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 11;
+  width: 100%;
+  height: 100%;
+}
+
+.cross-modal {
+  position: absolute;
+  top: 3%;
+  right: 2%;
+  max-width: 20px;
+  height: 20px;
+  object-fit: contain;
+  cursor: pointer;
+  z-index: 7;
+}
+.rightModal {
+  width: 60%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bg-modal {
+  max-width: 100%;
+  object-fit: contain;
+  mix-blend-mode: screen;
+}
+.modal-logo {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  max-width: 100%;
+  object-fit: contain;
+}
+.leftModal {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  width: 40%;
+  background-color: white;
+  height: 100%;
+  border-radius: 10px;
+  padding: 20px;
+}
+.leftModal h2 {
+  color: black;
+  font-size: 20px;
+  text-align: center;
+  font-weight: 400;
+  font-family: "h1", serif !important;
+}
+.leftModal h2 span {
+  color: #6957c4;
+}
+
+.leftModal form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  gap: 20px;
+  margin-top: 20px;
+  height: 100%;
+}
+.input-row {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 4px;
+  width: 100%;
+}
+.input-row label {
+  font-weight: 600;
+  color: black;
+  font-size: 14px;
+  font-family: "h1", serif !important;
+}
+.input-row input {
+  width: 99%;
+  height: 40px;
+  padding-left: 10px;
+  font-family: "h1", serif !important;
+}
+.leftModal form .mint {
+  height: 40px;
+}
+.leftModal h6 {
+  font-size: 13px;
+  text-decoration: underline;
+  margin-top: 40px;
+  cursor: pointer;
+  font-family: "h1", serif !important;
+}
+.leftModal form h5 {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.leftModal .login-h6 {
+  text-decoration: none;
+  cursor: initial;
+}
+.leftModal .login-h6 span {
+  text-decoration: underline;
+  color: #1f0e5e;
+  cursor: pointer;
+}
+.confirm-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 600px;
+  width: 96%;
+  height: 300px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  z-index: 12;
+  border-radius: 10px;
+}
+.confirm-box h1 {
+  font-family: "h1", serif !important;
+  font-size: 17px;
+}
+.confirm-box .tick {
+  max-width: 50px;
+  object-fit: contain;
+}
+@media screen and (max-width: 870px) {
+  .modal {
+    padding: 20px 10px;
+  }
+  .rightModal {
+    display: none;
+  }
+  .leftModal {
+    width: 100%;
+  }
+  .cross-modal {
+    right: 5%;
+    top: 5%;
+  }
+}

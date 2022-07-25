@@ -5,8 +5,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { Link as ScrollLink } from "react-scroll";
 import logo from "../../assets/images/logo.png";
+import Modal from "../../components/Modal/Modal";
 const Header = () => {
   const [open, setOpen] = useState(false);
+  const [openModal, setOpenModal] = useState(false);
   const openFunc = (e) => {
     setOpen((prev) => !prev);
     const header = document.querySelector(".header");
@@ -35,6 +37,7 @@ const Header = () => {
   });
   return (
     <>
+      {openModal && <Modal closeModal={setOpenModal} />}
       <header className={`header `}>
         <div className="h_container">
           <img src={logo} alt="" className="head-logo" />
@@ -93,7 +96,19 @@ const Header = () => {
             >
               Faq
             </ScrollLink>
+            <button
+              onClick={() => {
+                openFunc();
+                setOpenModal(true);
+              }}
+              className="login-btn mobile-login"
+            >
+              Sign up / Login
+            </button>
           </div>
+          <button onClick={() => setOpenModal(true)} className="login-btn">
+            Sign up / Login
+          </button>
           <FontAwesomeIcon
             onClick={openFunc}
             className="hamburger"
