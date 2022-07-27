@@ -51,7 +51,11 @@ function Team() {
               />
             </SplideSlide>
             <SplideSlide className="swiper-lazy">
-              <TeamCard img={team1} name={"Db009"} role={"Unity Developer"} />
+              <TeamCard
+                img={team1}
+                name={"Db009"}
+                role={"CEO & Lead Unity Dev"}
+              />
             </SplideSlide>
             <SplideSlide className="swiper-lazy">
               <TeamCard
