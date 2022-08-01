@@ -96,7 +96,7 @@ const Header = () => {
             >
               Faq
             </ScrollLink>
-            <button
+            {/* <button
               onClick={() => {
                 openFunc();
                 setOpenModal(true);
@@ -104,11 +104,11 @@ const Header = () => {
               className="login-btn mobile-login"
             >
               Sign up / Login
-            </button>
+            </button> */}
           </div>
-          <button onClick={() => setOpenModal(true)} className="login-btn">
+          {/* <button onClick={() => setOpenModal(true)} className="login-btn">
             Sign up / Login
-          </button>
+          </button> */}
           <FontAwesomeIcon
             onClick={openFunc}
             className="hamburger"

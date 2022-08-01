@@ -52,7 +52,7 @@ function Faq() {
               )}
             </div>
             <div className={`faq-answer ${open[0] ? "active" : ""}`}>
-              <p className="answer">June - July 2022</p>
+              <p className="answer">2022 Q3 - Q4</p>
             </div>
           </div>
         </Rotate>
